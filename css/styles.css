@@ -2635,10 +2635,12 @@ p, li {font-size:1.1em;}
 @keyframes slide-down {
   from {
     transform: translateY(-100%);
+    -webkit-transform: translate(-100%);
   }
 
   to {
     transform: translateY(0%);
+    -webkit-transform: translate(0%);
   }
 }
 
@@ -2650,10 +2652,12 @@ p, li {font-size:1.1em;}
 @keyframes slide-up {
   from {
     transform: translateY(0%);
+    -webkit-transform: translate(0%);
   }
 
   to {
     transform: translateY(-100%);
+    -webkit-transform: translate(-100%);
   }
 }
 
@@ -2665,11 +2669,13 @@ p, li {font-size:1.1em;}
   from {
     opacity: 0;
     transform: translateY(100%);
+    -webkit-transform: translate(100%);
   }
 
   to {
     opacity: 1;
     transform: translateY(0%);
+    -webkit-transform: translate(0%);
   }
 }
 
@@ -5743,6 +5749,7 @@ background-image: url("../img/logo.png");
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  -webkit-transform: translate(0%, -50%);
 }
 
 @media screen and (min-width: 993px) {
@@ -6392,6 +6399,7 @@ ul.social-links a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     width: 100%;
     padding: 0 20px;
   }
@@ -6527,7 +6535,8 @@ section#challenge {
 }
 
 #challenge .factors {
-    padding: 50px 150px 30px;
+    padding: 50px 0px 30px;
+    padding-left:150px;
 }
 
 #challenge .factors .content:last-child {
@@ -6722,8 +6731,8 @@ div.content.stroke_expectancy {
     font-weight: 600;
     line-height: 36px;
     top: 46%;
+}
 
-    }
 .content.stroke_expectancy figcaption span {
     font-size: 70px;
     font-weight:700;
@@ -6843,6 +6852,7 @@ div.content.stroke_expectancy {
     padding: 20px 0 0 30px;
     float:left;
   }
+
 }
 
 .positioning .factors ul {
@@ -7795,6 +7805,7 @@ figcaption span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -7849,6 +7860,7 @@ figcaption span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 993px) {
@@ -8475,6 +8487,7 @@ figcaption span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 .challenge .connections .chart figcaption,
@@ -9250,3 +9263,32 @@ p.footer a {
 }
 
 /*# sourceMappingURL=styles-compiled.css.map */
+
+@media screen and (max-width: 1488px) {
+  .content.patients1, .content.patients2, .content.hospitals1, .content.hospitals2 {width:100%;}
+  .content.patients1 .content.patients1, .content.patients2 .content.patients2, .content.hospitals1 .content.hospitals1, .content.hospitals2 .content.hospitals2 {
+    float: none;
+    margin: 0 auto;
+    width: 280px;
+  }
+  .row-height > .content.patients1, .row-height > .content.patients2, .row-height > .content.hospitals1, .row-height > .content.hospitals2 {margin:0;}
+  .savings .chart_caption {
+    width: 280px;
+    margin: 10px auto;
+    float: none;
+  }
+}
+
+.content.stroke_patients.animated.rotateIn > div {width:320px; height:320px;}
+
+  @media screen and (max-width: 1280px) {
+
+  div.content.stroke_rehab {
+    top:0;
+    right:0;
+  }
+  .positioning .factors .content {
+    margin:10px auto;
+  }
+
+}
