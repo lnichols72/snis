@@ -1,6 +1,9 @@
 
+@import url(../fonts/fontello/css/kresge.css);
+
 @import url(../fonts/fontello/css/animation.css);
 
+@import url(../fonts/fontello/css/kresge-ie7.css);
 
 @import url(../fonts/metaplus/stylesheet.css);
 
@@ -5543,7 +5546,7 @@ background-image: url("../img/logo.png");
 .navbar-page a {
   display: block;
   padding: 5px 0;
-  color: #fff;
+  color: #ccc;
 }
 
 .navbar-page a:hover,
