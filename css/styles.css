@@ -7143,7 +7143,7 @@ div.content.stroke_expectancy {
   padding:0;
   bottom:0;
 }
-.endovascular .video-caption span, .solve .video-caption span {
+.endovascular .video-caption span, .solve .video-caption span, .statement .video-caption span {
   color:#fff;
 }
 @media screen and (min-width: 993px) {
@@ -7154,9 +7154,20 @@ min-height:856px;
 .solve .video-caption {bottom:265px;}
 }
 
-/* @media screen and (max-width: 992px) {
-  .endovascular .video-caption, .endovascular .video-caption, .solve .video-caption, .statement .video-caption {display: none;}
-} */
+@media screen and (max-width: 992px) {
+  .endovascular .video-caption, .endovascular .video-caption, .solve .video-caption, .statement .video-caption {
+    bottom: -90px;
+    color: #fff !important;
+    float: right;
+    font-size: 16px;
+    line-height: 22px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 100%;
+  }
+  .statement .video-caption {bottom:-20px;}
+} 
 
 .endovascular .endovascular-content {
   background-color: transparent;
@@ -9422,7 +9433,7 @@ width: 100%;
     float: none;
     margin: 0 auto;
     position: static;
-    width: 550px;
+    max-width: 550px;
     display: block;
 }
  #positioning .row .factors {
