@@ -6144,6 +6144,12 @@ ul.social-links a {
 .social .link {
   display: inline-block;
   padding: 0 0 0 10px;
+      margin-left: -16px;
+    margin-top: -10px;
+}
+
+.social .twitter {
+      margin-left: -5px;
 }
 
 .social .icon {
@@ -6846,11 +6852,21 @@ div.content.stroke_expectancy {
   }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 993px) and (max-width: 1374px) {
   .positioning .factors, .ischemic_stroke .factors {
     width: 40%;
     padding: 20px 0 0 30px;
     float:left;
+  }
+  .content.chart_caption_sm {width:180px !important;}
+
+}
+
+@media screen and (min-width: 1375px) {
+  .positioning .factors, .ischemic_stroke .factors {
+    width: 40%;
+    padding: 20px 0 0 30px;
+    float:right;
   }
 
 }
@@ -7086,7 +7102,7 @@ div.content.stroke_expectancy {
   position: relative;
 }
 
-.endovascular .video-caption, .endovascular .video-caption, .solve .video-caption {
+.endovascular .video-caption, .endovascular .video-caption, .solve .video-caption, .statement .video-caption {
     font-size: 16px;
     text-align: left;
     width: 300px;
@@ -7095,6 +7111,12 @@ div.content.stroke_expectancy {
     position: absolute;
     right: 0;
     bottom: 200px;
+}
+
+
+.statement .video-caption {
+  padding:0;
+  bottom:0;
 }
 .endovascular .video-caption span, .solve .video-caption span {
   color:#fff;
@@ -7108,7 +7130,7 @@ min-height:856px;
 }
 
 @media screen and (max-width: 992px) {
-  .endovascular .video-caption, .endovascular .video-caption, .solve .video-caption {display: none;}
+  .endovascular .video-caption, .endovascular .video-caption, .solve .video-caption, .statement .video-caption {display: none;}
 }
 
 .endovascular .endovascular-content {
@@ -7395,7 +7417,7 @@ min-height:856px;
 }
 
 .content.hospitals2 figcaption span {
-    font-size: 60px;
+    font-size: 84px;
 }
 
 .savings .chart_caption {
@@ -9290,5 +9312,69 @@ p.footer a {
   .positioning .factors .content {
     margin:10px auto;
   }
+
+}
+
+@media screen and (max-width: 993px) {
+  #ischemic_stroke .row .factors .row, #positioning .row .factors {
+    float: none;
+    margin: 0 auto;
+    position: static;
+    width: 550px;
+    display: block;
+}
+ #positioning .row .factors {
+  width: 700px;
+ }
+ .positioning .factors .content {
+  margin:10px;
+ }
+}
+
+@media screen and (max-width: 715px) {
+  #ischemic_stroke .row .factors .row, #positioning .row .factors {
+    width: 100%;
+}
+
+}
+
+.mobile {display: none !important;}
+
+@media screen and (min-width: 400px) and (max-width: 1356px) {
+  .content.chart_caption_sm {width:200px !important;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .mobile {display: block !important;}
+  .desktop {display: none !important;}
+  #ischemic_stroke.ischemic_stroke figcaption {
+    left: auto;
+    position: static;
+    text-align: center;
+    transform: none;
+    width: 100%;
+  }
+
+  #ischemic_stroke.ischemic_stroke .factors .content {
+    float:none;
+    width:100%;
+  }
+
+  #ischemic_stroke.ischemic_stroke .factors .content .chart_caption {
+    padding: 20px !important;
+  }
+  .content.chart_caption_sm, div.content.stroke_expectancy {
+    width:100% !important;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1374px) {
+  .positioning .factors, .ischemic_stroke .factors {
+    width: 40%;
+    padding: 20px 0 0 30px;
+    float:left;
+  }
+  .content.chart_caption_sm {width:180px !important;}
 
 }
