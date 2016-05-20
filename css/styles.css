@@ -6545,8 +6545,11 @@ section#challenge {
 }
 
 #challenge .factors {
-    padding: 50px 0px 30px;
+    padding: 75px 0px 30px;
     padding-left:150px;
+}
+#challenge .factors .row {
+    top: 0;
 }
 
 #challenge .factors .content:last-child {
