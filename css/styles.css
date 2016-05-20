@@ -6481,6 +6481,10 @@ p.video-caption span {
   font-size:18px !important;  
   text-transform: uppercase;
 }
+
+.hero-unit .subtitle {
+  padding:10px 30px;
+}
 @media screen and (min-width: 993px) {
   .hero-unit .subtitle {
     margin: 0px;
