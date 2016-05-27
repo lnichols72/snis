@@ -3320,7 +3320,7 @@ figure {
 .button {
   background-color: #1fb1ff;
   padding: 20px 0px;
-  margin:15px;
+  margin:15px 5px;
   color: #fff;
   font-size: 18px;
   border: none;
@@ -3331,9 +3331,26 @@ figure {
   font-family: 'Josefin Slab', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  min-width: 230px;
+  min-width: 217px;
   text-align: center;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 993px) {
+  .navbar-utility .navbar-menu .nav-item.download a,
+  .contact-footer .subscribe-button,
+  .hero-unit a, .pledge a,
+  .pledge .button,
+  .button-blue-square,
+  .search .search-button,
+  .button-white-square,
+  .button-blue-ghost,
+  .button-white-ghost,
+  .ghost-botton,
+  .button {
+    margin:15px;
+    min-width: 230px;
+  }
 }
 
 .navbar-utility .navbar-menu .nav-item.download a:hover,
@@ -3830,7 +3847,7 @@ form input[type="submit"],
 }
 
 .nav-brand .intro {
-    width: 58%;
+    width: 75%;
     float: right;
 }
 
