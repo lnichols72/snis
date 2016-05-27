@@ -44,6 +44,11 @@ optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 p,li{font-size:1.1em}
+.mobile{display:none}
+@media screen and (max-width: 500px) {
+.mobile{display:block!important}
+.desktop{display:none!important}
+}
 .container{*zoom:1;max-width:1366px;margin:0 auto;padding:0 20px}
 .container:after,.containerfluid:after{content:"";display:table;clear:both}
 .embed-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:700px;width:100%}
@@ -1978,7 +1983,7 @@ div.content.stroke_rehab{top:0;right:0}
 @media screen and (max-width: 715px) {
 #ischemic_stroke .row .factors .row,#positioning .row .factors{width:100%}
 }
-.mobile{display:none!important}
+
 @media screen and (min-width: 500px) and (max-width: 1356px) {
 .content.chart_caption_sm{width:200px!important}
 .positioning .factors > .content{float:none!important}
