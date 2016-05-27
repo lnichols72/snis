@@ -3337,6 +3337,7 @@ figure {
 }
 
 @media screen and (min-width: 993px) {
+<<<<<<< HEAD
    .navbar-utility .navbar-menu .nav-item.download a,
    .contact-footer .subscribe-button,
    .hero-unit a, .pledge a,
@@ -3352,6 +3353,23 @@ figure {
      min-width: 230px;
    }
  }
+=======
+  .navbar-utility .navbar-menu .nav-item.download a,
+  .contact-footer .subscribe-button,
+  .hero-unit a, .pledge a,
+  .pledge .button,
+  .button-blue-square,
+  .search .search-button,
+  .button-white-square,
+  .button-blue-ghost,
+  .button-white-ghost,
+  .ghost-botton,
+  .button {
+    margin:15px;
+    min-width: 230px;
+  }
+}
+>>>>>>> origin/gh-pages
 
 .navbar-utility .navbar-menu .nav-item.download a:hover,
 .contact-footer .subscribe-button:hover,
